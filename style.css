@@ -124,11 +124,6 @@ hr {
     transition: height ease-out 1s;
 }
 
-.bar:hover{
-    background-color: hsl(10, 79%, 80%);
-    transition: background-color ease 0.5s;
-}
-
 .amount {
     display: none;
     font-family: 'DM Sans', sans-serif;

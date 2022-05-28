@@ -63,12 +63,14 @@ let elementAmount = document.querySelectorAll('.amount');
 
 for (let i=0; i < elementBar.length; i++){
     elementBar[i].addEventListener("mouseover", function( event ) {
+        elementBar[i].style.opacity = "0.5"
         elementAmount[i].style.display = "block";
     });
 }
 
 for (let i=0; i < elementBar.length; i++){
     elementBar[i].addEventListener("mouseout", function( event ) {
+        elementBar[i].style.opacity = "1"
         elementAmount[i].style.display = "none";
     });
 }
