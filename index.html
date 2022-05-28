@@ -3,41 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
+  <div id="expense-chart">
+    <!--<header>-->
+      <div id="balance-container">
+        <div>
+          <div class="title">My balance</div>
+          <div class="balance"><span class="balance-amount">$921.48</span></div>
+        </div>      
+          <img src="./images/logo.svg" alt="circles">
+      </div>
+    <!--</header>-->
+    <br>
+    <div id="chart-container">
+      <div class="spending">Spending - Last 7 days</div>
+      <br>
+      <br>
+      <div class="bar-chart">
+        <div class="mon">
+          <div class="mon amount"></div>
+          <div class="mon bar"></div>
+          <div class="mon legend">mon</div>
+        </div>
+        <div class="tue">
+          <div class="tue amount"></div>
+          <div class="tue bar"></div>
+          <div class="tue legend">tue</div>
+        </div>
+        <div class="wed">
+          <div class="wed amount"></div>
+          <div class="wed bar"></div>
+          <div class="wed legend">wed</div>
+        </div>
+        <div class="thu">
+          <div class="thu amount"></div>
+          <div class="thu bar"></div>
+          <div class="thu legend">thu</div>
+        </div>
+        <div class="fri">
+          <div class="fri amount"></div>
+          <div class="fri bar"></div>
+          <div class="fri legend">fri</div>
+        </div>
+        <div class="sat">
+          <div class="sat amount"></div>
+          <div class="sat bar"></div>
+          <div class="sat legend">sat</div>
+        </div>
+        <div class="sun">
+          <div class="sun amount"></div>
+          <div class="sun bar"></div>
+          <div class="sun legend">sun</div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <footer>
+        <div id="total-container">
+          <div>
+            <div class="month-total">Total this month</div>
+            <div class="month-amount"><span>$478.33</span></div>
+          </div>
+          <div>
+            <div class="month-change">+2.4%</div>
+            <div class="month-legend">from last month</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <br>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">virtual-lee</a>.
   </div>
+  <script type="text/javascript" src="script.js" defer></script>
 </body>
 </html>
