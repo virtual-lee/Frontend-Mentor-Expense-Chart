@@ -121,7 +121,7 @@ hr {
     margin: auto;
     border-radius: 5px;
     height: 150px;
-    transition: height ease 1s;
+    transition: height ease-out 1s;
 }
 
 .bar:hover{

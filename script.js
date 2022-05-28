@@ -52,25 +52,24 @@ function highestExpense(data){
             highestDay = x.day;
         }
     })
-    console.log(highestDay)
     let element = document.querySelector(`.${highestDay} .bar`)
-    console.log(element)
     element.style.backgroundColor = "hsl(186, 34%, 60%)";
 }
 
+
+//Bar chart mouse over amount pop up.
 let elementBar = document.querySelectorAll('.bar');
-let elementValue = document.querySelectorAll('.amount');
+let elementAmount = document.querySelectorAll('.amount');
 
 for (let i=0; i < elementBar.length; i++){
     elementBar[i].addEventListener("mouseover", function( event ) {
-        elementValue[i].style.display = "block";
-        elementValue[i].style.transition = "display ease 1s";
+        elementAmount[i].style.display = "block";
     });
 }
 
 for (let i=0; i < elementBar.length; i++){
     elementBar[i].addEventListener("mouseout", function( event ) {
-        elementValue[i].style.display = "none";
+        elementAmount[i].style.display = "none";
     });
 }
 
