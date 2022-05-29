@@ -53,10 +53,6 @@ body {
     background-color: hsl(27, 66%, 92%);
 }
 
-hr {
-    background-color: hsl(27, 66%, 92%);
-}
-
 #expense-chart{
     display: flex;
     flex-direction: column;
@@ -76,9 +72,13 @@ hr {
     font-family: 'DM Sans', sans-serif;
     color: hsl(33, 100%, 98%);
     padding: 20px 40px 20px 40px;
-
     margin: 0px 0px 0px 0px;
     
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .balance-amount {
@@ -111,6 +111,7 @@ hr {
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     margin-top: 5px;
+    font-weight: normal;
 
 }
 
@@ -136,7 +137,7 @@ hr {
     padding: 7px 7px 7px 7px;
 }
 
-.spending {
+h1 {
     font-family: 'DM Sans', sans-serif;
     font-size: 30px;
     font-weight: 700;
